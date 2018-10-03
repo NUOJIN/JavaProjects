@@ -1,0 +1,15 @@
+Method			ArrayList Runtime	LinkedList Runtime	Explanation
+add(T element)			o(1)		o(n)			linkedlist uses while loop
+add(int index,T element)	o(n)		o(n)			both use for loop
+clear()				o(n^2)		o(1)			arraylist uses double for loop
+contains(T element)		o(n)		o(n)			both use while or for loop
+get(int index)			o(1)		o(n)			linkedlist uses for loop
+indexOf(T element)		o(n)		o(n)			both use for or while loop
+isEmpty()			o(1)		o(1)			both don't use loop
+lastIndexOf(T element)		o(n)		o(n)			both use while or for loop
+set(int index,T element)	o(1)		o(n)			linkedlist uses for loop
+size()				o(1)		o(1)			both don't use loop
+sort(boolean order)		o(n^2)		o(n^2)			both use double for loops
+remove(T element)		o(n)		o(n^2)			arraylist uses for loop; linkedlist uses remove() and indexOf(), which take double loop
+remove(int index)		o(n)		o(n)			both use single loop
+toString()			o(n)		o(n)			both use while or for loop
